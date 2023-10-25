@@ -28,7 +28,7 @@
             margin: 0;
             padding: 0;
             background-image: url('wheel_of_pain.webp');
-            background-size: cover;
+            background-size: 100% 100%;
             background-position: center;
             background-repeat: no-repeat;
         }
@@ -51,9 +51,11 @@
     function resizeVideo() {
       var width = window.innerWidth;
       var height = window.innerHeight;
-      var video = document.getElementById('video');
-      video.width = width * 0.6;
-      video.height = height * 0.6;
+      var videoContainer = document.querySelector('.video-container');
+
+      // Set the video container dimensions to half the window size
+      videoContainer.style.width = `${width * 0.7}px`;
+      videoContainer.style.height = `${height * 0.7}px`;
     }
     window.addEventListener('resize', resizeVideo);
     resizeVideo();
