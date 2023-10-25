@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNDLFYB4N1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
     
-      gtag('config', 'G-KNDLFYB4N1');
+        gtag('config', 'G-KNDLFYB4N1');
     </script>
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5654268033118934"
@@ -21,19 +21,22 @@
     
     <link rel="icon" type="image/png" href="icon.png">
     
-
-
     <style>
         body, html {
             margin: 0;
             padding: 0;
+            background-image: url('wheel_of_pain.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         iframe {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 15%;  /* Adjust this to center the iframe vertically */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 70vh;  /* 70% of viewport height */
+            width: calc(70vh * 16 / 9);  /* Keep aspect ratio of 16:9 */
             border: 0;
         }
     </style>
