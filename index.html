@@ -26,17 +26,17 @@
             margin: 0;
             padding: 0;
             background-image: url('wheel_of_pain.webp');
-            background-size: cover;
-            background-position: center;
+            background-size: 100% 100%;  /* Stretch to fill entire background */
+            background-position: top left;
             background-repeat: no-repeat;
         }
         iframe {
             position: absolute;
-            top: 15%;  /* Adjust this to center the iframe vertically */
-            left: 50%;
+            top: 50%;  /* Center the iframe vertically */
+            left: 50%;  /* Center the iframe horizontally */
             transform: translate(-50%, -50%);
             height: 70vh;  /* 70% of viewport height */
-            width: calc(70vh * 16 / 9);  /* Keep aspect ratio of 16:9 */
+            width: calc(70vh * 16 / 9);  /* Maintain a 16:9 aspect ratio */
             border: 0;
         }
     </style>
